@@ -1,0 +1,57 @@
+import android.content.Context;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
+import android.widget.ProgressBar;
+
+import com.example.kiran.facebook.R;
+
+import java.net.URL;
+
+*Created by kiran on 19/12/16.
+        */
+public class taskTest extends AppCompatActivity<URL, Integer,Long> {
+    private ProgressBar mprogressbar;
+
+
+
+    String imgUrl = "https://www.google.co.in/search?q=downloading+images&client=ubuntu&hs=l0E&channel=fs&tbm=isch&imgil=Z4TD_c1PwRepIM%253A%253BDhH7POQd1nzGTM%253Bhttp%25253A%25252F%25252Fwww.motionelements.com%25252Fstock-video-2035075-downloading-and-uploading-process-animation-with-p&source=iu&pf=m&fir=Z4TD_c1PwRepIM%253A%252CDhH7POQd1nzGTM%252C_&usg=__Mu8HxF8-jklnNKT-nUWYc6OEP-E%3D&biw=1301&bih=673&ved=0ahUKEwin_-2O_4HRAhUHvo8KHV0KAWEQyjcINQ&ei=bLtYWKeZG4f8vgTdlISIBg#imgrc=Z4TD_c1PwRepIM%3A"
+
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_today);
+
+        Asyncdemo asyncdemo;
+         asyncdemo = new Asyncdemo();
+        asyncdemo.execute(imgUrl);
+    }
+
+    class Asyncdemo extends AsyncTask<String,Integer,Long>
+    {
+        private ProgressBar mprogressbar;
+        private Context contextl
+                public Asyncdemo(AsyncTask simpleAsynctask) {
+
+                    this.contextl = AsyncTask;
+                }
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            mprogressbar = new ProgressBar(contextl);
+        }
+
+        @Override
+        protected Long doInBackground(String... strings) {
+            for(int i=0;i<)
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Long aLong) {
+            super.onPostExecute(aLong);
+        }
+    }
+
+}
